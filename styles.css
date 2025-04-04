@@ -467,3 +467,151 @@ footer {
     background-color: black;
 }
 
+.login-button {
+    position: absolute; /* Lo posiciona de forma absoluta dentro de la cabecera */
+    top: 50%; /* Lo centra verticalmente */
+    right: 20px; /* Lo alinea a la derecha */
+    transform: translateY(-50%); /* Ajusta para que esté realmente centrado */
+    background-color: rgba(0, 128, 255, 0.5);
+    color: white; /* Color del texto */
+    border: 2px solid black; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor en forma de mano */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.login-button:hover {
+    background-color: white; /* Color de fondo al pasar el mouse */
+    color: black; /* Cambio de color del texto */
+}
+
+.user-box {
+    background-color: #222;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.logout-button {
+    margin-top: 5px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #c0392b;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+    /* Cabecera */
+    .cabezera {
+        font-size: 25px;
+        padding: 15px;
+    }
+
+    /* Botones */
+    .botones button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    /* Contenido */
+    .contenido, .contenido-home {
+        margin: 10px;
+    }
+
+    .contenidoBody {
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    /* Menú lateral */
+    .slide-menu {
+        width: 250px; /* Reduce el ancho del menú en móviles */
+    }
+
+    /* Botón de apertura del menú */
+    .open-button {
+        font-size: 18px;
+        padding: 8px 12px;
+        top: 10px;
+        left: 10px;
+    }
+
+    /* Fondo en secciones */
+    #content.inicio, #content.textos, #content.ideas, #content.contacto {
+        background-size: cover;
+    }
+
+    /* Texto grande */
+    .textosTitulo {
+        font-size: 40px;
+    }
+
+    /* Resultados */
+    .resultados-container {
+        flex-direction: column; /* Alinea las tarjetas verticalmente */
+    }
+
+    /* Tarjetas de resultados */
+    .resultado-card {
+        width: 90%; /* Ajusta el tamaño de las tarjetas en pantallas pequeñas */
+    }
+
+    /* Imágenes dentro de las tarjetas */
+    .resultado-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Tabla de modelos */
+    .modelos-table table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    /* Botones de navegación */
+    .btn-ver-mas, .btn-volver {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* Login Button */
+    .login-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    /* Ajustes del menú en móvil */
+    .slide-menu h3 {
+        font-size: 24px;
+    }
+
+    .unabomber-slide {
+        max-width: 70%;
+    }
+
+    .user-box {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

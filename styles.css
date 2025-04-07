@@ -163,6 +163,10 @@ footer {
 
 /* Enlaces dentro del menú */
 .slide-menu ul li a {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    flex-grow: 1; /* Esto hace que la lista ocupe el espacio restante */    
     text-decoration: none;
     color: white;
     font-family: 'OldNewspaperTypes', serif;
@@ -172,6 +176,7 @@ footer {
 
 /* Efecto de hover en los enlaces */
 .slide-menu ul li a:hover {
+    margin: 15px 0;
     color: white; /* Cambia el color a oscuro al pasar el mouse */
     transform: translateX(5px); /* Efecto de deslizamiento lateral */
 }
@@ -361,7 +366,7 @@ footer {
 
 /* Enlaces del menú */
 .slide-menu ul li a {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /* Botón de cierre */
@@ -488,15 +493,11 @@ footer {
 }
 
 .user-box {
-    background-color: #222;
-    color: #fff;
-    padding: 10px 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-family: sans-serif;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-align: center;
 }
 
 .logout-button {
@@ -596,9 +597,18 @@ footer {
     }
 
     /* Login Button */
-    .login-button {
-        padding: 8px 15px;
-        font-size: 14px;
+    .login-button,
+    .logout-button {
+        width: 100%;  /* Asegura que el botón ocupe todo el ancho disponible */
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #e74c3c; /* Color distintivo */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
     }
 
     /* Ajustes del menú en móvil */

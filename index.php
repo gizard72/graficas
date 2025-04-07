@@ -15,41 +15,49 @@ $nombre = $logueado ? $_SESSION['nombre_completo'] : '';
 
 <body>
     <!-- Menú lateral tipo slide -->
-    <div id="slideMenu" class="slide-menu">
-        <button id="closeSlideMenu" class="close-button">&times;</button>
-        <h3 id="menutxt">Menu</h3>
-        <ul>
-            <li><a href="index.php">Inicio</a></li>
-            <li><a href="#" onclick="loadPage('textos')">Gráficas</a></li>
-            <li><a href="#" onclick="loadPage('ideas')">Ideas</a></li>
-        </ul>
-        <img src="/src/resources/UTC.png" alt="Unabomber" class="unabomber-slide">
-    </div>
+<!-- Menú lateral tipo slide -->
+<div id="slideMenu" class="slide-menu">
+    <button id="closeSlideMenu" class="close-button">&times;</button>
+    <h3 id="menutxt">Menu</h3>
+
+    <!-- Si el usuario está logueado, muestra el nombre y el botón de logout -->
+    <?php if ($logueado): ?>
+        <div class="user-box">
+            <p>Bienvenido, <strong><?= htmlspecialchars($nombre) ?></strong></p>
+            <form method="post" action="php/logout.php">
+                <button type="submit" class="logout-button">Cerrar sesión</button>
+            </form>
+        </div>
+    <?php else: ?>
+        <!-- Si no está logueado, muestra el botón de login -->
+        <button id="loginButton" class="login-button" onclick="window.location.href='login.php'">Login</button>
+    <?php endif; ?>
+
+    <!-- Menú de navegación -->
+    <ul>
+        <li><a href="index.php">Inicio</a></li>
+        <li><a href="#" onclick="loadPage('textos')">Gráficas</a></li>
+        <li><a href="#" onclick="loadPage('ideas')">Detalles Técnicos</a></li>
+    </ul>
+    <!-- Imagen al final del menú -->
+    <img src="/src/resources/UTC.png" alt="Unabomber" class="unabomber-slide">
+</div>
 
     <!-- Botón para abrir el menú -->
     <button id="openSlideMenu" class="open-button">☰</button>
 
     <!-- Contenedor principal -->
     <div id="content">
-        <header class="cabezera">
-            <?php if ($logueado): ?>
-                <div class="user-box">
-                    <p>Bienvenido, <strong><?= htmlspecialchars($nombre) ?></strong></p>
-                    <form method="post" action="php/logout.php">
-                        <button type="submit" class="logout-button">Cerrar sesión</button>
-                    </form>
-                </div>
-            <?php else: ?>
-                <button id="loginButton" class="login-button" onclick="window.location.href='login.php'">Login</button>
-            <?php endif; ?>            
-
+        <header class="cabezera">          
             <div class="cabezapagina">
-                <h1>Proyecto</h1>
+                <h1>Bienvenido a nuestro proyecto</h1>
             </div>
         </header>
 
         <section class="contenido-home">
+            <h2>Contenido Principal</h2>
             <!-- Aquí puedes cargar el contenido dinámico -->
+             
         </section>
     </div>
 

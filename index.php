@@ -40,7 +40,7 @@ $nombre = $logueado ? $_SESSION['nombre_completo'] : '';
         <li><a href="#" onclick="loadPage('ideas')">Detalles Técnicos</a></li>
     </ul>
     <!-- Imagen al final del menú -->
-    <img src="/src/resources/UTC.png" alt="Unabomber" class="unabomber-slide">
+    <img src="src/resources/UTC.png" alt="Unabomber" class="unabomber-slide">
 </div>
 
     <!-- Botón para abrir el menú -->
@@ -50,13 +50,67 @@ $nombre = $logueado ? $_SESSION['nombre_completo'] : '';
     <div id="content">
         <header class="cabezera">          
             <div class="cabezapagina">
-                <h1>Bienvenido a nuestro proyecto</h1>
+                <h1>Dashboard</h1>
             </div>
         </header>
 
         <section class="contenido-home">
-            <h2>Contenido Principal</h2>
-            <!-- Aquí puedes cargar el contenido dinámico -->
+        <div class="dashboard-item">
+    <h4>Visualización 2D con PCA</h4>
+    <a href="src/resources/2DCONPCA.png" target="_blank">
+        <img src="src/resources/2DCONPCA.png" alt="VISUALIZACIÓN 2D CON PCA" width="400" height="250">
+    </a>
+</div>
+
+<div class="dashboard-item">
+    <h4>Visualización de Clusters con PCA</h4>
+    <a href="src/resources/CLUSTER.png" target="_blank">
+        <img src="src/resources/CLUSTER.png" alt="VISUALIZACIÓN DE CLUSTER CON PCA" width="400" height="250">
+    </a>
+</div>
+
+<div class="dashboard-item">
+    <h4>Distribución de Edad por Estado de Deserción</h4>
+    <a href="src/resources/distribucionedad.png" target="_blank">
+        <img src="src/resources/distribucionedad.png" alt="DISTRIBUCIÓN DE EDAD POR ESTADO DE DESERCIÓN" width="400" height="250">
+    </a>
+</div>
+
+<div class="dashboard-item">
+    <h4>Distribución de Deserción Estudiantil</h4>
+    <a href="src/resources/distribucion1.png" target="_blank">
+        <img src="src/resources/distribucion1.png" alt="DISTRIBUCIÓN DE DESERCIÓN ESTUDIANTIL" width="400" height="250">
+    </a>
+</div>
+
+<div class="dashboard-item">
+    <h4>Mapa de Calor de Correlaciones</h4>
+    <a href="src/resources/mapacalor.png" target="_blank">
+        <img src="src/resources/mapacalor.png" alt="MAPA DE CALOR DE CORRELACIONES" width="400" height="250">
+    </a>
+</div>
+
+<div class="dashboard-item">
+    <h4>Árbol de Decisión</h4>
+    <a href="src/resources/VarImporArbolDecision.png" target="_blank">
+        <img src="src/resources/VarImporArbolDecision.png" alt="ÁRBOL DE DECISIÓN" width="400" height="250">
+    </a>
+</div>
+
+<div class="dashboard-item">
+    <h4>Random Forest</h4>
+    <a href="src/resources/VarImporlRandomForest.png" target="_blank">
+        <img src="src/resources/VarImporlRandomForest.png" alt="RANDOM FOREST" width="400" height="250">
+    </a>
+</div>
+
+<div class="dashboard-item">
+    <h4>XGBoost</h4>
+    <a href="src/resources/VarImporXGBOST.png" target="_blank">
+        <img src="src/resources/VarImporXGBOST.png" alt="XGBOOST" width="400" height="250">
+    </a>
+</div>
+
              
         </section>
     </div>

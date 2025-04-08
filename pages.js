@@ -58,22 +58,8 @@ const pages = {
                     <li>Programas de tutoría diferenciados</li>
                     <li>Monitoreo especial para estudiantes con múltiples fallas</li>
                 </ul>
-                <img src="/src/resources/2DCONPCA.png" alt="VISUALIZACIÓN 2D CON PCA" width="400" height="250">
+                </div>
 
-                <img src="/src/resources/CLUSTER.png" alt="VISUALIZACIÓN DE CLUSTER CON PCA" width="400" height="250">
-                
-                <img src="/src/resources/distribucionedad.png" alt="DISTRIBUCIÓN DE EDAD POR ESTADO DE DESERCIÓN" width="400" height="250">
-
-                <img src="/src/resources/distribucion1.png" alt="DISTRIBUCIÓN DE DESERCOÓN ESTUDIANTIL" width="400" height="250">
-
-                <img src="/src/resources/mapacalor.png" alt="MAPA DE CALOR DE CORRELACIONES" width="400" height="250">
-
-                <img src="/src/resources/VarImporArbolDecision.png" alt="ARBOL DE DECISIÓN" width="400" height="250">
-
-                <img src="/src/resources/VarImporlRandomForest.png" alt="RANDOM FOREST" width="400" height="250">
-
-                <img src="/src/resources/VarImporXGBOST.png" alt="XGBOOST" width="400" height="250">
-                    
                 <button class="btn-ver-mas" onclick="loadPage('ideas')">Ver detalles técnicos</button>
             </div>
         </section>
